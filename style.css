@@ -1,0 +1,33 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+    /* background-color: #f0f0f0; */
+}
+
+.image-container .image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 500px;
+    height: auto;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+
+}
+
+.image-container .hidden-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    text-align: center;
+}
+
+.image-container .image:hover .hidden-text {
+    visibility: visible;
+    opacity: 1;
+}
